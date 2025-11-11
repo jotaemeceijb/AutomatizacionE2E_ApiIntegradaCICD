@@ -21,7 +21,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   capture_pageview:false,
   api_transport:'sendBeacon',
   loaded: function(posthog) { 
-    posthog.capture("report_feature",{distinct_id:"b9cba698-a36e-466b-9795-e8e1a65eea53",karate_version:"1.5.1",karate_meta:null});
+    posthog.capture("report_feature",{distinct_id:"7eea9cd4-be73-4637-982e-ad178bc41a58",karate_version:"1.5.1",karate_meta:null});
   }
 });
 </script>
@@ -49,7 +49,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2025-11-10 08:37:31 p. m.</div>
+    <div>2025-11-05 06:20:19 p. m.</div>
   </div>
 </div>
 
@@ -84,7 +84,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>851</span>
+              <span>ms:</span>&nbsp;<span>1029</span>
             </div>
           </div>
           <div class="step-row">
@@ -163,7 +163,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>request { username: &#39;emilys&#39;, password: &#39;emilyspass&#39; }</span>
       </div>
     </div>
-    <div class="time-cell passed">15</div>
+    <div class="time-cell passed">19</div>
   </div>
 
    
@@ -191,7 +191,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method POST</span>
       </div>
     </div>
-    <div class="time-cell passed">783</div>
+    <div class="time-cell passed">928</div>
   </div>
 
    
@@ -200,26 +200,26 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.10">20:37:30.420 request:
+  <div class="preformatted" data-parent="0.10">18:20:18.805 request:
 1 &gt; POST https://dummyjson.com/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 45
 1 &gt; Host: dummyjson.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;username&quot;:&quot;emilys&quot;,&quot;password&quot;:&quot;emilyspass&quot;}
 
-20:37:30.974 response time in milliseconds: 549
+18:20:19.423 response time in milliseconds: 608
 1 &lt; 200
-1 &lt; Date: Tue, 11 Nov 2025 00:37:31 GMT
+1 &lt; Date: Wed, 05 Nov 2025 22:20:20 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Transfer-Encoding: chunked
 1 &lt; Connection: keep-alive
 1 &lt; Server: cloudflare
 1 &lt; x-ratelimit-limit: 100
 1 &lt; x-ratelimit-remaining: 99
-1 &lt; x-ratelimit-reset: 1762821457
+1 &lt; x-ratelimit-reset: 1762381225
 1 &lt; x-dns-prefetch-control: off
 1 &lt; x-frame-options: SAMEORIGIN
 1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
@@ -229,16 +229,16 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; access-control-allow-origin: *
 1 &lt; x-powered-by: Cats on Keyboards
 1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
-1 &lt; etag: W/&quot;3a2-F8xJEdSZX96QmWIqM/tFEix6mf8&quot;
+1 &lt; etag: W/&quot;3a2-QX9zMZxbC4cr83R6xMjsXbagUC8&quot;
 1 &lt; vary: Accept-Encoding
 1 &lt; cf-cache-status: DYNAMIC
 1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
-1 &lt; Server-Timing: cfEdge;dur=5,cfOrigin;dur=86
-1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=aAxKkBTLAqJw07fxCwY08RhmhxGLlvNNgg3c0P%2FM5tSAMC61%2Bx%2FamRk%2B0zS2lC7vFDEMz5b78PCZB5dK%2BcvfIiLCzGPFZ0EZDjocu2E%3D&quot;}]}
-1 &lt; Set-Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NjI4MjE0NTEsImV4cCI6MTc2MjgyNTA1MX0.mKsZH8GvRO8POdPUGOTyZmWN-OtJSpsVHeWWRdAT7qE; HttpOnly; Secure; Path=/; Max-Age=3600; Expires=Tue, 11 Nov 2025 01:37:31 GMT
-1 &lt; Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NjI4MjE0NTEsImV4cCI6MTc2NTQxMzQ1MX0.oI273Q6u4Z-EgI8cqIRXKL09A_tCfJoXkX7JCPfzjN0; HttpOnly; Secure; Path=/; Max-Age=3600; Expires=Tue, 11 Nov 2025 01:37:31 GMT
-1 &lt; CF-RAY: 99c9b8b88af3b805-MIA
-{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NjI4MjE0NTEsImV4cCI6MTc2MjgyNTA1MX0.mKsZH8GvRO8POdPUGOTyZmWN-OtJSpsVHeWWRdAT7qE&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NjI4MjE0NTEsImV4cCI6MTc2NTQxMzQ1MX0.oI273Q6u4Z-EgI8cqIRXKL09A_tCfJoXkX7JCPfzjN0&quot;,&quot;id&quot;:1,&quot;username&quot;:&quot;emilys&quot;,&quot;email&quot;:&quot;emily.johnson@x.dummyjson.com&quot;,&quot;firstName&quot;:&quot;Emily&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;image&quot;:&quot;https://dummyjson.com/icon/emilys/128&quot;}
+1 &lt; Server-Timing: cfEdge;dur=7,cfOrigin;dur=179
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=8feBjtAg6HHpuD7FWYlU1qnA1%2BNiyxuNStn3mGVI2aokJz1Il7fO5YTmCsLtfBzwVrdU4bWmd2ZtiG1EGc6MWT%2BvPQxfUisM8WDOrSg%3D&quot;}]}
+1 &lt; Set-Cookie: accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NjIzODEyMjAsImV4cCI6MTc2MjM4NDgyMH0.bk-bgp4klNQlm73RMxVq2HRpKfgh8f17To-52YqTiPQ; HttpOnly; Secure; Path=/; Max-Age=3600; Expires=Wed, 05 Nov 2025 23:20:20 GMT
+1 &lt; Set-Cookie: refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NjIzODEyMjAsImV4cCI6MTc2NDk3MzIyMH0.nbOD8NRLCQqqd-0BRm65PUzvxIhhdeokAFB91wbXzVw; HttpOnly; Secure; Path=/; Max-Age=3600; Expires=Wed, 05 Nov 2025 23:20:20 GMT
+1 &lt; CF-RAY: 999fbce06dd39115-SDQ
+{&quot;accessToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NjIzODEyMjAsImV4cCI6MTc2MjM4NDgyMH0.bk-bgp4klNQlm73RMxVq2HRpKfgh8f17To-52YqTiPQ&quot;,&quot;refreshToken&quot;:&quot;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJlbWlseXMiLCJlbWFpbCI6ImVtaWx5LmpvaG5zb25AeC5kdW1teWpzb24uY29tIiwiZmlyc3ROYW1lIjoiRW1pbHkiLCJsYXN0TmFtZSI6IkpvaG5zb24iLCJnZW5kZXIiOiJmZW1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2VtaWx5cy8xMjgiLCJpYXQiOjE3NjIzODEyMjAsImV4cCI6MTc2NDk3MzIyMH0.nbOD8NRLCQqqd-0BRm65PUzvxIhhdeokAFB91wbXzVw&quot;,&quot;id&quot;:1,&quot;username&quot;:&quot;emilys&quot;,&quot;email&quot;:&quot;emily.johnson@x.dummyjson.com&quot;,&quot;firstName&quot;:&quot;Emily&quot;,&quot;lastName&quot;:&quot;Johnson&quot;,&quot;gender&quot;:&quot;female&quot;,&quot;image&quot;:&quot;https://dummyjson.com/icon/emilys/128&quot;}
 
 </div>   
 
@@ -259,7 +259,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>Then</span>&nbsp;<span>status 200</span>
       </div>
     </div>
-    <div class="time-cell passed">4</div>
+    <div class="time-cell passed">3</div>
   </div>
 
    
@@ -287,7 +287,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>match response.firstName == &#39;Emily&#39;</span>
       </div>
     </div>
-    <div class="time-cell passed">12</div>
+    <div class="time-cell passed">18</div>
   </div>
 
    
@@ -343,7 +343,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>And</span>&nbsp;<span>print &#39;Usuario autenticado:&#39;, response.firstName, response.email</span>
       </div>
     </div>
-    <div class="time-cell passed">34</div>
+    <div class="time-cell passed">60</div>
   </div>
 
    
@@ -352,7 +352,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.14">20:37:31.027 [print] Usuario autenticado: Emily emily.johnson@x.dummyjson.com 
+  <div class="preformatted" data-parent="0.14">18:20:19.508 [print] Usuario autenticado: Emily emily.johnson@x.dummyjson.com 
 </div>   
 
   
@@ -373,7 +373,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
               </div>
             </div>
             <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>202</span>
+              <span>ms:</span>&nbsp;<span>131</span>
             </div>
           </div>
           <div class="step-row">
@@ -480,7 +480,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>When</span>&nbsp;<span>method post</span>
       </div>
     </div>
-    <div class="time-cell passed">200</div>
+    <div class="time-cell passed">127</div>
   </div>
 
    
@@ -489,26 +489,26 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.20">20:37:31.035 request:
+  <div class="preformatted" data-parent="0.20">18:20:19.519 request:
 1 &gt; POST https://dummyjson.com/auth/login
 1 &gt; Content-Type: application/json; charset=UTF-8
 1 &gt; Content-Length: 58
 1 &gt; Host: dummyjson.com
 1 &gt; Connection: Keep-Alive
-1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/25)
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.8)
 1 &gt; Accept-Encoding: gzip,deflate
 {&quot;username&quot;:&quot;usuario_invalido&quot;,&quot;password&quot;:&quot;clave_erronea&quot;}
 
-20:37:31.232 response time in milliseconds: 195
+18:20:19.643 response time in milliseconds: 122
 1 &lt; 400
-1 &lt; Date: Tue, 11 Nov 2025 00:37:31 GMT
+1 &lt; Date: Wed, 05 Nov 2025 22:20:20 GMT
 1 &lt; Content-Type: application/json; charset=utf-8
 1 &lt; Content-Length: 33
 1 &lt; Connection: keep-alive
 1 &lt; Server: cloudflare
 1 &lt; x-ratelimit-limit: 100
 1 &lt; x-ratelimit-remaining: 99
-1 &lt; x-ratelimit-reset: 1762821454
+1 &lt; x-ratelimit-reset: 1762381230
 1 &lt; x-dns-prefetch-control: off
 1 &lt; x-frame-options: SAMEORIGIN
 1 &lt; strict-transport-security: max-age=15552000; includeSubDomains
@@ -522,9 +522,9 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 1 &lt; cf-cache-status: DYNAMIC
 1 &lt; Nel: {&quot;report_to&quot;:&quot;cf-nel&quot;,&quot;success_fraction&quot;:0.0,&quot;max_age&quot;:604800}
 1 &lt; Server-Timing: cfCacheStatus;desc=&quot;DYNAMIC&quot;
-1 &lt; Server-Timing: cfEdge;dur=4,cfOrigin;dur=86
-1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=4RDimzsrQPgPmReQDYFH8vOtAB2YIVBg1Q4L4LZbcJwbzvpUIC3RiLuZwXeAsrnL9rCQ42O%2Bjk8yHEzZheDdgbjuZzu6m2TXEwiMFm0%3D&quot;}]}
-1 &lt; CF-RAY: 99c9b8ba3b9cc962-MIA
+1 &lt; Server-Timing: cfEdge;dur=4,cfOrigin;dur=60
+1 &lt; Report-To: {&quot;group&quot;:&quot;cf-nel&quot;,&quot;max_age&quot;:604800,&quot;endpoints&quot;:[{&quot;url&quot;:&quot;https://a.nel.cloudflare.com/report/v4?s=hO3Os0AZBpQ6s5ysHs01z7cR9e3Q20SA%2B4jh94x057rolEdVkq7KLwVMTxP1hujsTGQaZcgNeFdtOnkZvNY29wV94YF4BUIelZ21tu8%3D&quot;}]}
+1 &lt; CF-RAY: 999fbce2992d911d-SDQ
 {&quot;message&quot;:&quot;Invalid credentials&quot;}
 
 </div>   
@@ -602,7 +602,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>print &#39;Mensaje recibido:&#39;, response.message</span>
       </div>
     </div>
-    <div class="time-cell passed">1</div>
+    <div class="time-cell passed">2</div>
   </div>
 
    
@@ -611,7 +611,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   
 
-  <div class="preformatted" data-parent="0.23">20:37:31.235 [print] Mensaje recibido: Invalid credentials 
+  <div class="preformatted" data-parent="0.23">18:20:19.647 [print] Mensaje recibido: Invalid credentials 
 </div>   
 
   
