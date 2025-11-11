@@ -30,11 +30,14 @@ export class CustomWorld extends World {
     this.postalCode = process.env.POSTAL_CODE || '10101';
   }
 
-  async openBrowser(headless: boolean = false) {
-    this.browser = await chromium.launch({ headless });
-    this.context = await this.browser.newContext();
-    this.page = await this.context.newPage();
-  }
+
+async openBrowser() {
+  const isCI = process.env.CI === 'true';
+  this.browser = await chromium.launch({ headless: isCI });
+  this.context = await this.browser.newContext();
+  this.page = await this.context.newPage();
+}
+
 
   async closeBrowser() {
     await this.page.close();
