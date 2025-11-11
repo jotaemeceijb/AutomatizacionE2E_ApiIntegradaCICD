@@ -1,0 +1,24 @@
+{
+  "name": "automatizacion-e2e-api-integrada-cicd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "cucumber-js --require-module ts-node/register --require src/e2e-tests/support/world.ts --require src/e2e-tests/steps/**/*.ts src/e2e-tests/features/**/*.feature",
+    "test:api": "java -jar tools/karate.jar src/api-tests",
+    "test:all": "npm run test:e2e && npm run test:api"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@playwright/test": "^1.56.1",
+    "karate": "^1.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}

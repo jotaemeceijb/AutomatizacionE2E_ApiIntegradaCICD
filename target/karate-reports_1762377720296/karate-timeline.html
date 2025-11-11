@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/api-tests\/login\/login[1:7]","start":1762377553486,"end":1762377554301,"title":"src\/api-tests\/login\/login[1:7] 17:19:13.486-17:19:14.301 Login exitoso con credenciales válidas","className":"failed"},{"id":2,"group":1,"content":"src\/api-tests\/login\/login[2:18]","start":1762377554309,"end":1762377554468,"title":"src\/api-tests\/login\/login[2:18] 17:19:14.309-17:19:14.468 Login fallido con credenciales inválidas"},{"id":3,"group":1,"content":"src\/api-tests\/products\/products[1:7]","start":1762377555086,"end":1762377555195,"title":"src\/api-tests\/products\/products[1:7] 17:19:15.086-17:19:15.195 Obtener listado de usuarios"},{"id":4,"group":1,"content":"src\/api-tests\/products\/products[2:16]","start":1762377555202,"end":1762377555311,"title":"src\/api-tests\/products\/products[2:16] 17:19:15.202-17:19:15.311 Validar estructura del primer usuario"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

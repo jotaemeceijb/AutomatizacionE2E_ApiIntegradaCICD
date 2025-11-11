@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="res/vis.min.js"></script>
+    <link href="res/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"main","id":1}];
+var items = [{"id":1,"group":1,"content":"src\/api-tests\/login\/login[1:7]","start":1762378791760,"end":1762378792907,"title":"src\/api-tests\/login\/login[1:7] 17:39:51.760-17:39:52.907 Login exitoso con credenciales válidas"},{"id":2,"group":1,"content":"src\/api-tests\/login\/login[2:17]","start":1762378792914,"end":1762378793052,"title":"src\/api-tests\/login\/login[2:17] 17:39:52.914-17:39:53.052 Login fallido con credenciales inválidas"},{"id":3,"group":1,"content":"src\/api-tests\/products\/products[1:7]","start":1762378793958,"end":1762378794093,"title":"src\/api-tests\/products\/products[1:7] 17:39:53.958-17:39:54.093 Obtener listado de usuarios"},{"id":4,"group":1,"content":"src\/api-tests\/products\/products[2:16]","start":1762378794109,"end":1762378794273,"title":"src\/api-tests\/products\/products[2:16] 17:39:54.109-17:39:54.273 Validar estructura del primer usuario"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
