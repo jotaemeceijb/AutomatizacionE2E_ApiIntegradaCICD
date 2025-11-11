@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test:e2e": "cucumber-js --require-module ts-node/register --require src/e2e-tests/support/world.ts --require src/e2e-tests/steps/**/*.ts src/e2e-tests/features/**/*.feature",
+    
+    "test:e2e": "cucumber-js --require-module ts-node/register --require src/e2e-tests/support/world.ts --require src/e2e-tests/steps/**/*.ts src/e2e-tests/features/**/*.feature --format @cucumber/html-formatter:report/report.html",
     "test:api": "java -jar tools/karate.jar src/api-tests",
     "test:all": "npm run test:e2e && npm run test:api"
   },

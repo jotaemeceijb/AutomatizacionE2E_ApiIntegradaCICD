@@ -2,7 +2,7 @@ import { Given, When, Then } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
 import { CustomWorld } from "../support/world";
 
-Given('que Jael ha iniciado sesión en SauceDemo', async function (this: CustomWorld) {
+Given('que Jonathan ha iniciado sesión en SauceDemo', async function (this: CustomWorld) {
   await this.openBrowser();
   await this.page.goto(this.baseUrl);
   await this.page.fill('#user-name', this.userStandard);

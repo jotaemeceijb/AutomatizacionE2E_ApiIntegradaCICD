@@ -63,10 +63,14 @@ jobs:
           retention-days: 5
 
       # 9️⃣ Archivar reportes de Playwright
+      - name: Verificar carpeta de reportes
+        run: ls -la report || echo "No se encontró la carpeta playwright-repor"
+
+      #  🔟 Archivar reportes de Playwright
       - name: Archive Playwright report
         uses: actions/upload-artifact@v4
         if: always()
         with:
           name: playwright-report
-          path: playwright-report
+          path: report
           retention-days: 5

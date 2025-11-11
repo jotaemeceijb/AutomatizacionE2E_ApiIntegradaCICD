@@ -2,7 +2,7 @@ import { Given, When, Then } from "@cucumber/cucumber";
 import { expect } from "@playwright/test";
 import { CustomWorld } from "../support/world";
 
-Given('que Jael está en la página principal de SauceDemo', async function (this: CustomWorld) {
+Given('que Jonathan está en la página principal de SauceDemo', async function (this: CustomWorld) {
   await this.openBrowser();
   await this.page.goto(this.baseUrl);
   await this.page.waitForSelector('#login-button'); 
